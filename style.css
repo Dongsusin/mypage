@@ -1,0 +1,580 @@
+/*초기화*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: -0.6px;
+}
+a,a:link,a:visited{
+  color: inherit;
+  text-decoration: none;
+}
+ul{
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+  unicode-bidi: isolate;
+}
+li{
+  list-style: none;
+}
+body{
+  font-weight: 400;
+  font-size: 14px;
+  color: #242424;
+}
+section{
+  display: block;
+}
+/*header*/
+header{
+  position: fixed;
+  background-color: white;
+  top:0;
+  z-index: 1;
+  width: 100%;
+  border-bottom: 1px solid #ededed;
+}
+header .container{
+  display: flex;
+  align-items: center;
+  height: 64px;
+  padding: 0px 4.25%;
+  margin:  0px auto;
+}
+/*header-logo*/
+.header-logo{
+  width: 50px;
+  height: 100%;
+}
+.header-logo a{
+  height: inherit;
+  display: flex;
+  align-items: center;
+}
+.header-logo img{
+  display: block;
+  pointer-events: none;
+  width: 50px;
+  height: 21px;
+  fill: none;
+}
+/*header-element*/
+.header-element{
+  height: 100%;
+  margin-left: 24px;
+  padding-left: 0;
+}
+.header-element ul{
+  display: flex;
+  flex-direction: row;
+  height: inherit;
+}
+.header-element a{
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: inherit;
+  padding: 0px 24px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #242424;
+  align-items: center;
+}
+.header-element a.select{
+  font-weight: 700;
+}
+/*header-button*/
+.header-button{
+  display: flex;
+  height: 100%;
+  align-items: center;
+  margin-left: auto;
+}
+.header-button a img{
+  display: block;
+  pointer-events: none;
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+.header-button .header-login{
+  display: flex;
+  align-items: center;
+  margin-left: 16px;
+}
+.header-button .header-login button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  font-size: 12px;
+  color: #fff;
+  height: 32px;
+  border-radius: 4px;
+  background-color: #242424;
+}
+/*main*/
+main{
+  width: 100%;
+  height: 100%;
+  padding-bottom: 0px;
+  display: block;
+}
+main .container{
+  width: 100%;
+  height: 100%;
+  margin:  0px auto;
+}
+/*sub-header*/
+.sub-header{
+  top: 65px;
+  position: sticky;
+  background-color: #fff;
+  z-index: 1;
+}
+.sub-headerbar{
+  position: relative;
+  width: 100%;
+  height: 38px;
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+}
+.plus{
+  letter-spacing: 0px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-left: auto;
+  padding-left: 16px;
+  padding-right: 4.25%;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  height: 100%;
+}
+.plus-button{
+  display: flex;
+  width: 25px;
+  height: 25px;
+  padding: 6px;
+  border: none;
+  cursor: pointer;
+  background-color: #fff;
+}
+/*content*/
+.content{
+  margin-top: 65px;
+  display: flex;
+  width: 100%;
+  padding: 0px 4.25%;
+  overflow: hidden;
+}
+/*left*/
+.left{
+  width: 27.5%;
+  padding: 0px 20px;
+}
+.left section{
+  padding: 0px 0px 24px;
+}
+/*profile*/
+.profile{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 20px;
+}
+.profile-element{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+.profile-image{
+  position: relative;
+  display: inline-block;
+  width: 80px;
+}
+.profile-image img{
+  width: 80px;
+  height: 80px;
+  border-radius: 100px;
+  object-fit: cover;
+}
+.profile-name{
+  display: flex;
+  flex-direction: column;
+}
+.profile-name span{
+  align-items: center;
+  letter-spacing: 0px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: #242424;
+}
+.profile-tag{
+  display: flex;
+}
+.profile-tag a{
+  display: flex;
+  gap: 4px;
+}
+.profile-tag span{
+  letter-spacing: 0px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #242424;
+}
+.profile-tag .select{
+  font-weight: 700;
+}
+/*highlights*/
+.highlights{
+  display: flex;
+  margin: 20px -8px;
+  justify-content: space-between;
+  align-items: center;
+}
+.highlights a{
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.highlights-content{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.highlights-num{
+  letter-spacing: 0px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #242424;
+}
+.highlights-name{
+  letter-spacing: 0px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #242424;
+}
+/*button*/
+.button{
+  display: flex;
+  gap: 12px;
+  position: relative;
+}
+.write{
+  width: 160px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #242424;
+  color: #ffffff;
+  letter-spacing: 0px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  border-radius: 100px;
+}
+.book{
+  width: 160px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #ffffff;
+  color: #242424;
+  letter-spacing: 0px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  border-radius: 100px;
+}
+/*post*/
+.post{
+  margin-top: 16px;
+}
+.post img{
+  width: 100%;
+  height: 62px;
+}
+/*right*/
+.right{
+  width: 1000px;
+  padding-left: 44px;
+}
+.right-title h4{
+  position: relative;
+  display: flex;
+  gap: 2px;
+  letter-spacing: 0px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: #242424;
+  width: 100%;
+}
+.right-title p{
+  letter-spacing: 0px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #6f6f6f;
+}
+.right-title a{
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  letter-spacing: 0px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #6f6f6f;
+  cursor: pointer;
+}
+.right-list{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding: 24px 0px;
+  gap: 12px;
+}
+.right-title{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  gap:2px;
+}
+/*추천 도서*/
+.book-content{
+  display: flex;
+  flex-direction: column;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 100px;
+}
+.book-list{
+  display: flex;
+  align-items: baseline;
+}
+.book{
+  display: flex;
+  flex-direction: column;
+  margin-right: 12px;
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+.book-select{
+  width: 100px;
+  display: flex;
+  align-items: flex-end;
+}
+.book-element{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: inherit;
+  gap: 8px;
+}
+.book-element img{
+  display: block;
+  position: relative;
+  width: 100px;
+  height: 160px;
+  border-radius: 10px;
+}
+.book-option{
+  display: block;
+  width: 100%;
+  text-align: left;
+  overflow: hidden;
+}
+.book-name{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  text-overflow: ellipsis;
+  white-space : nowrap
+}
+.book-sub{
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
+}
+.book a{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+/*책장*/
+.bookcase{
+  display: flex;
+  flex-direction: column;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 148px;
+}
+.bookcase-image{
+  flex-shrink: 0;
+  position: relative;
+  margin-right: 16px;
+  width: 148px;
+  height: 148px;
+}
+.bookcase-image img{
+  position: absolute;
+  inset: 0px;
+  width: 100%;
+  height: 100%;
+  object-fit:  cover;
+}
+.bookcase-name p{
+  overflow-wrap: break-word;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  letter-spacing: 0px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #242424;
+}
+.bookcase-name span{
+  letter-spacing: 0px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #6f6f6f;
+}
+/*달력*/
+.calendar img{
+  width: 810px;
+  height: 375px;
+}
+/*리포트*/
+.riport-list{
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+.riport-list li{
+  width: 100%;
+  height: 20px;
+  display: block;
+}
+.riport-list li .target{
+  display: table-cell;
+  overflow: hidden;
+  padding-right: 8px;
+  color: #242424;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  letter-spacing: 0px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+.prograss-bar{
+  display: table-cell;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  background-color: #f7f7f7;
+  overflow: hidden;
+}
+.prograss-state{
+  width: 0%;
+}
+.prograss-state-mili{
+  width: 40%;
+  height: 20px;
+  background-color: #c1c1c1;
+}
+.count{
+  display: table-cell;
+  overflow: hidden;
+  padding-left: 8px;
+  text-align: right;
+  white-space: nowrap;
+  letter-spacing: 0px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+}
+/*독서 활동*/
+.read{
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+}
+.read-book{
+  margin-right: 12px;
+  position: relative;
+  display: flex;
+  width: 157px;
+  height: 160px;
+  flex-direction: column;
+  border-radius: 8px;
+  background-color: #f7f7f7;
+}
+.read-book a{
+  padding: 16px;
+  font-weight: 700;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  position: relative;
+}
+.read-book a div{
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.read-book a img{
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  width: 68px;
+  height: 68px;
+}
+.read-name{
+  color: #6f6f6f;
+  letter-spacing: 0px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+}
+.read-caption{
+  color: #242424;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  letter-spacing: 0px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+}
