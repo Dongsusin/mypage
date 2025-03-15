@@ -6,18 +6,11 @@
   letter-spacing: -0.6px;
 }
 a,a:link,a:visited{
-  color: inherit;
   text-decoration: none;
 }
 ul{
-  display: block;
-  list-style-type: disc;
   margin-block-start: 1em;
   margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 0px;
-  unicode-bidi: isolate;
 }
 li{
   list-style: none;
@@ -26,9 +19,6 @@ body{
   font-weight: 400;
   font-size: 14px;
   color: #242424;
-}
-section{
-  display: block;
 }
 /*header*/
 header{
@@ -41,10 +31,8 @@ header{
 }
 header .container{
   display: flex;
-  align-items: center;
   height: 64px;
   padding: 0px 4.25%;
-  margin:  0px auto;
 }
 /*header-logo*/
 .header-logo{
@@ -57,25 +45,19 @@ header .container{
   align-items: center;
 }
 .header-logo img{
-  display: block;
-  pointer-events: none;
   width: 50px;
   height: 21px;
-  fill: none;
 }
 /*header-element*/
 .header-element{
   height: 100%;
   margin-left: 24px;
-  padding-left: 0;
 }
 .header-element ul{
   display: flex;
   flex-direction: row;
-  height: inherit;
 }
 .header-element a{
-  position: relative;
   display: flex;
   width: 100%;
   height: inherit;
@@ -83,7 +65,6 @@ header .container{
   font-size: 20px;
   font-weight: 400;
   color: #242424;
-  align-items: center;
 }
 .header-element a.select{
   font-weight: 700;
@@ -96,8 +77,6 @@ header .container{
   margin-left: auto;
 }
 .header-button a img{
-  display: block;
-  pointer-events: none;
   position: relative;
   width: 24px;
   height: 24px;
@@ -122,31 +101,24 @@ header .container{
 main{
   width: 100%;
   height: 100%;
-  padding-bottom: 0px;
-  display: block;
 }
 main .container{
   width: 100%;
   height: 100%;
-  margin:  0px auto;
 }
 /*sub-header*/
 .sub-header{
+  z-index: 1;
   top: 65px;
   position: sticky;
   background-color: #fff;
-  z-index: 1;
 }
 .sub-headerbar{
-  position: relative;
   width: 100%;
   height: 38px;
-  margin: 0px auto;
   display: flex;
-  align-items: center;
 }
 .plus{
-  letter-spacing: 0px;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -155,7 +127,6 @@ main .container{
   padding-right: 4.25%;
   display: flex;
   align-items: center;
-  flex-shrink: 0;
   height: 100%;
 }
 .plus-button{
@@ -198,7 +169,6 @@ main .container{
   gap: 16px;
 }
 .profile-image{
-  position: relative;
   display: inline-block;
   width: 80px;
 }
@@ -214,11 +184,16 @@ main .container{
 }
 .profile-name span{
   align-items: center;
-  letter-spacing: 0px;
   font-weight: 700;
   font-size: 20px;
   line-height: 28px;
   color: #242424;
+}
+.before{
+  align-items: center;
+  margin-left: 4px;
+  font-weight: 700;
+  color: #6f6f6f;
 }
 .profile-tag{
   display: flex;
@@ -228,7 +203,6 @@ main .container{
   gap: 4px;
 }
 .profile-tag span{
-  letter-spacing: 0px;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -255,14 +229,12 @@ main .container{
   text-align: center;
 }
 .highlights-num{
-  letter-spacing: 0px;
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
   color: #242424;
 }
 .highlights-name{
-  letter-spacing: 0px;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -272,10 +244,8 @@ main .container{
 .button{
   display: flex;
   gap: 12px;
-  position: relative;
 }
 .write{
-  width: 160px;
   height: 40px;
   display: flex;
   align-items: center;
@@ -283,14 +253,12 @@ main .container{
   width: 100%;
   background-color: #242424;
   color: #ffffff;
-  letter-spacing: 0px;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   border-radius: 100px;
 }
 .book{
-  width: 160px;
   height: 40px;
   display: flex;
   align-items: center;
@@ -298,7 +266,6 @@ main .container{
   width: 100%;
   background-color: #ffffff;
   color: #242424;
-  letter-spacing: 0px;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -314,14 +281,12 @@ main .container{
 }
 /*right*/
 .right{
-  width: 1000px;
+  width: 75%;
   padding-left: 44px;
 }
 .right-title h4{
-  position: relative;
   display: flex;
   gap: 2px;
-  letter-spacing: 0px;
   font-weight: 700;
   font-size: 20px;
   line-height: 28px;
@@ -329,20 +294,17 @@ main .container{
   width: 100%;
 }
 .right-title p{
-  letter-spacing: 0px;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   color: #6f6f6f;
 }
 .right-title a{
-  position: absolute;
   display: flex;
   width: 100%;
   height: 100%;
   justify-content: flex-end;
   align-items: center;
-  letter-spacing: 0px;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -355,6 +317,7 @@ main .container{
   flex-direction: column;
   padding: 24px 0px;
   gap: 12px;
+  overflow: hidden;
 }
 .right-title{
   display: flex;
@@ -366,8 +329,6 @@ main .container{
 .book-content{
   display: flex;
   flex-direction: column;
-  margin-left: 0px;
-  margin-right: 0px;
   width: 100px;
 }
 .book-list{
@@ -388,31 +349,28 @@ main .container{
   align-items: flex-end;
 }
 .book-element{
-  position: relative;
   display: flex;
   flex-direction: column;
   width: inherit;
   gap: 8px;
 }
 .book-element img{
-  display: block;
-  position: relative;
   width: 100px;
   height: 160px;
   border-radius: 10px;
 }
 .book-option{
-  display: block;
   width: 100%;
   text-align: left;
-  overflow: hidden;
 }
 .book-name{
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
+  overflow: hidden;
+  white-space: nowrap;
   text-overflow: ellipsis;
-  white-space : nowrap
+  word-break: break-all;
 }
 .book-sub{
   font-weight: 400;
@@ -427,41 +385,32 @@ main .container{
   display: flex;
   flex-direction: column;
   gap: 8px;
+  margin-left: 15px;
 }
 /*책장*/
 .bookcase{
   display: flex;
   flex-direction: column;
-  margin-left: 0px;
-  margin-right: 0px;
   width: 148px;
 }
 .bookcase-image{
-  flex-shrink: 0;
-  position: relative;
   margin-right: 16px;
   width: 148px;
   height: 148px;
 }
 .bookcase-image img{
-  position: absolute;
-  inset: 0px;
   width: 100%;
   height: 100%;
   object-fit:  cover;
 }
 .bookcase-name p{
-  overflow-wrap: break-word;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  letter-spacing: 0px;
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
   color: #242424;
+  margin-left: 1px;
 }
 .bookcase-name span{
-  letter-spacing: 0px;
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
@@ -469,7 +418,7 @@ main .container{
 }
 /*달력*/
 .calendar img{
-  width: 810px;
+  width: 100%;
   height: 375px;
 }
 /*리포트*/
@@ -481,16 +430,12 @@ main .container{
 .riport-list li{
   width: 100%;
   height: 20px;
-  display: block;
 }
 .riport-list li .target{
   display: table-cell;
-  overflow: hidden;
   padding-right: 8px;
   color: #242424;
   white-space: nowrap;
-  text-overflow: ellipsis;
-  letter-spacing: 0px;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -502,10 +447,6 @@ main .container{
   height: 100%;
   border-radius: 4px;
   background-color: #f7f7f7;
-  overflow: hidden;
-}
-.prograss-state{
-  width: 0%;
 }
 .prograss-state-mili{
   width: 40%;
@@ -514,22 +455,16 @@ main .container{
 }
 .count{
   display: table-cell;
-  overflow: hidden;
   padding-left: 8px;
-  text-align: right;
   white-space: nowrap;
-  letter-spacing: 0px;
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
 }
 /*독서 활동*/
 .read{
-  margin-left: 0px;
-  margin-right: 0px;
   width: 100%;
   height: 100%;
-  z-index: 1;
   display: flex;
 }
 .read-book{
@@ -547,7 +482,6 @@ main .container{
   font-weight: 700;
   width: 100%;
   height: 100%;
-  display: inline-block;
   position: relative;
 }
 .read-book a div{
@@ -564,16 +498,12 @@ main .container{
 }
 .read-name{
   color: #6f6f6f;
-  letter-spacing: 0px;
   font-weight: 700;
   font-size: 12px;
   line-height: 18px;
 }
 .read-caption{
   color: #242424;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  letter-spacing: 0px;
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
